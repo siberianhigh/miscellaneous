@@ -6,7 +6,6 @@
 
 
 pairwise.adonis2.FDR<-function(ad.mod,corr.method="fdr"){
-  corr.method="fdr"
   ln <- length(ad.mod)
   SS<-NULL
   R2<-NULL
