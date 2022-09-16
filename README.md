@@ -9,7 +9,7 @@ This function is greatly inspired by 'adonis.pair' function from EcoUtils packag
 **Output example**
 
 ```
-> adonis.pair.FDR(pairwise.adonis2.results, "fdr")
+> pairwise.adonis2.FDR(pairwise.adonis2.results, "fdr")
 
 `$parent_call`
 
