@@ -2,14 +2,14 @@
 
 ## R functions
 
-**`pairwise.adonis2.FDR()`** function returns FDR corrected P values from a set of pairwise comparisons produced by 'pairwise.adonis2' function of 'pairwiseAdonis' package (https://github.com/pmartinezarbizu/pairwiseAdonis).
+**`pairwise.adonis2.FDR()`** function returns corrected P values for multiple pairwise comparisons produced by 'pairwise.adonis2' function of 'pairwiseAdonis' package (https://github.com/pmartinezarbizu/pairwiseAdonis). Default correction method is FDR, but other methods available, see [documentation for p.adjust](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/p.adjust)
 
 This function is greatly inspired by 'adonis.pair' function from EcoUtils package (https://github.com/GuillemSalazar/EcolUtils).
 
 **Output example**
 
 ```
-> adonis.pair.FDR(pairwise.adonis2.results)
+> adonis.pair.FDR(pairwise.adonis2.results, "fdr")
 
 `$parent_call`
 
